@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Гамбургер</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="logo">Конструктор гамбургера</div>
+</header>
+<main>
+    <div class="products" id="gamburger">
+        <form action="#" method="GET">
+            <fieldset>
+                <div class="radio">
+                    <h3>Выбери размер гамбургера</h3>
+                    <label>
+                    <input type="radio" name="size" value="big" data-price="100" data-calories="40" checked>Большой (100 рублей, 40 калорий).<Br>
+                    </label>
+                    <label>
+                    <input type="radio" name="size" value="small" data-price="50" data-calories="20">Маленький (50 рублей, 20 калорий).
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <h3>Выбери начинку гамбургера</h3>
+                    <input type="checkbox" id="cheese" value="cheese" data-price="10" data-calories="20"><label for="cheese">С сыром (+10 рублей, +20 калорий).</label><Br>
+                    <input type="checkbox" id="salad" value="salad" data-price="20" data-calories="5"><label for="salad">С салатом (+20 рублей, +5 калорий).</label><Br>
+                    <input type="checkbox" id="potato" value="potato" data-price="15" data-calories="10"><label for="potato">С картофелем (+15 рублей, +10 калорий).</label><Br>
+                </div>
+                <div class="number">
+                    <h3>Добавь приправу или майонез</h3>
+                    <input type="checkbox" id="spice" value="spice" data-price="15" data-calories="0"><label for="spice">Посыпать приправой (+15 рублей, +0 калорий).</label><Br>
+                    <input type="checkbox" id="mayonnaise" value="mayonnaise" data-price="20" data-calories="5"><label for="mayonnaise">Полить майонезом (+20 рублей, +5 калорий).</label><Br>
+                </div>
+                <button class="btn-cart buy-btn" id="button">Купить</button>
+        </fieldset>
+        </form>
+    </div>
+    <div id="order"></div>
+</main>
+<script src="gamburger.js"></script>
+</body>
+</html>
+
+
+<!-- Некая сеть фастфуда предлагает несколько видов гамбургеров:
+### Маленький (50 рублей, 20 калорий).
+### Большой (100 рублей, 40 калорий). ### Гамбургер может быть с одним из нескольких 
+видов начинок (обязательно):
+### С сыром (+10 рублей, +20 калорий).
+### С салатом (+20 рублей, +5 калорий).
+### С картофелем (+15 рублей, +10 калорий). ### Дополнительно гамбургер можно 
+посыпать приправой (+15 рублей, +0 калорий) и полить майонезом (+20 рублей, +5 калорий). 
+### 3Напишите программу, рассчитывающую стоимость и калорийность гамбургера. 
+Можно использовать примерную архитектуру класса из методички, но можно использовать и свою. -->
